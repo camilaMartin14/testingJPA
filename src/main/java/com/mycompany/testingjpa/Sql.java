@@ -3,6 +3,8 @@ package com.mycompany.testingjpa;
 import java.sql.Connection;
 import java.sql.SQLException;
 
+
+
 /**
  *
  * @author Camila
@@ -11,6 +13,8 @@ public class Sql {
 
     public static void main(String[] args) {
         MyConnection cnt = new MyConnection ();
+        
+        //agregar ejercicios de video
         
         try{
             
