@@ -1,9 +1,9 @@
 package com.mycompany.testingjpa;
 
+import gestorbd.lideres.lideres;
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.SQLException;
-
-
 
 /**
  *
@@ -13,8 +13,7 @@ public class Sql {
 
     public static void main(String[] args) {
         MyConnection cnt = new MyConnection ();
-        
-        //agregar ejercicios de video
+
         
         try{
             
@@ -30,6 +29,32 @@ public class Sql {
             
         }catch (SQLException ex){
             System.err.println("Error : " + ex.getMessage());
+        }
+    }
+
+    public boolean insertarLider (lideres lider){
+            MyConnection insertar = new MyConnection();
+            insertar.conectar();
+        try{
+            Connection c = conectar();
+            String sql = "insert into lider values(default,?,?,?,?)";
+
+            PreparedStatement ps = c.prepareStatement(sql);
+            ps.setInt(1, lider.getId());
+            ps.setString(2, lider.getNombre());
+            ps.setString(3, lider.getApellido());
+            PreparedStatement pa;
+            ps.setString(4, lider.getFechaContratacion());
+
+
+
+
+            int conteo = ps.executeUpdate();
+            return conteo > 0;
+
+        }catch (SQLException e){
+            System.out.println("Error : " + e.getMessage());
+            return false;
         }
     }
 }
