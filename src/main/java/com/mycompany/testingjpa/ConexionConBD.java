@@ -8,7 +8,7 @@ import java.sql.SQLException;
 /**
  * Clase para manejar la conexión a la BD MySQL.
  */
-public class MyConnection {
+public class ConexionConBD {
 
     // URL de conexión a la base de datos
     private static final String URL = "jdbc:mysql://localhost/konecta";

@@ -1,4 +1,4 @@
-package gestorbd.lideres;
+package gestionbd.representantes;
 
 /**
  *

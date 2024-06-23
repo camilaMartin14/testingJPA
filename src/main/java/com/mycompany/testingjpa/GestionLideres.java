@@ -10,11 +10,11 @@ import java.sql.SQLException;
  */
 public class GestionLideres {
 
-    private MyConnection conexion; // Instancia única de MyConnection para manejar la conexión
+    private ConexionConBD conexion; // Instancia única de ConexionConBD para manejar la conexión
 
     public GestionLideres() {
 
-        this.conexion = new MyConnection(); // Establecer la conexión en el constructor
+        this.conexion = new ConexionConBD(); // Establecer la conexión en el constructor
     }
 
 
