@@ -4,18 +4,18 @@ package gestorbd.lideres;
  *
  * @author Camila
  */
-public class representantes {
-    
+public class Representante {
+
     private int id;
     private String nombre;
     private String apellido;
     private String fechaContratacion;
     private double salario;
 
-    public representantes() {
+    public Representante() {
     }
 
-    public representantes(int id, String nombre, String apellido, String fechaContratacion, double salario) {
+    public Representante(int id, String nombre, String apellido, String fechaContratacion, double salario) {
         this.id = id;
         this.nombre = nombre;
         this.apellido = apellido;

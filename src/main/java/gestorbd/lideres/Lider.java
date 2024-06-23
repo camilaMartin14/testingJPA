@@ -4,17 +4,17 @@ package gestorbd.lideres;
  *
  * @author Camila
  */
-public class lideres {
-    
+public class Lider {
+
     private int id;
     private String nombre;
     private String apellido;
     private String fechaContratacion;
 
-    public lideres() {
+    public Lider() {
     }
 
-    public lideres(int id, String nombre, String apellido, String fechaContratacion) {
+    public Lider(int id, String nombre, String apellido, String fechaContratacion) {
         this.id = id;
         this.nombre = nombre;
         this.apellido = apellido;
@@ -52,8 +52,4 @@ public class lideres {
     public void setFechaContratacion(String fechaContratacion) {
         this.fechaContratacion = fechaContratacion;
     }
-    
-    
-       
-    
 }

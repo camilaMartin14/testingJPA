@@ -1,6 +1,6 @@
 package com.mycompany.testingjpa;
 
-import gestorbd.lideres.lideres;
+import gestorbd.lideres.Lider;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
@@ -19,11 +19,11 @@ public class GestionLideres {
 
 
     // Método para insertar un líder en la base de datos
-    public boolean insertarLider(lideres lider) {
+    public boolean insertarLider(Lider lider) {
         try {
             Connection c = conexion.conectar(); // Obtener la conexión
 
-            String sql = "insert into lider (id, nombre, apellido, fecha_contratacion) values(default,?,?,?)";
+            String sql = "insert into Lider (id, nombre, apellido, fecha_contratacion) values(default,?,?,?)";
             PreparedStatement ps = c.prepareStatement(sql);
             ps.setString(1, lider.getNombre());
             ps.setString(2, lider.getApellido());
