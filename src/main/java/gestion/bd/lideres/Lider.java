@@ -1,4 +1,4 @@
-package gestorbd.lideres;
+package gestion.bd.lideres;
 
 /**
  *

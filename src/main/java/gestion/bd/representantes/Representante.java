@@ -1,4 +1,4 @@
-package gestionbd.representantes;
+package gestion.bd.representantes;
 
 /**
  *
