@@ -2,7 +2,7 @@ package gestion.bd.lideres;
 
 /**
  *
- * @author Camila
+ * @author camilaMartin14
  */
 public class Lider {
 

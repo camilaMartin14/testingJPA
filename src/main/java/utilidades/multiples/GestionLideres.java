@@ -1,6 +1,6 @@
-package com.mycompany.testingjpa;
+package utilidades.multiples;
 
-import gestorbd.lideres.Lider;
+import gestion.bd.lideres.Lider;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;

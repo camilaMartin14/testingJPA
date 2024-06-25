@@ -1,4 +1,4 @@
-package com.mycompany.testingjpa;
+package utilidades.multiples;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
